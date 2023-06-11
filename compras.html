@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="codoacodo.png" alt="Logo">
+      <p>Conf Bs As</p>
+    </div>
+    <div class="header-right">
+      <a href="index.html">La conferencia</a>
+      <a href="oradores.html">Los oradores</a>
+      <a href="lugaryfecha.html">El lugar y la fecha</a>
+      <a href="formulario.html">Conviertete en orador</a>
+      <a href="compras.html">Comprar tickets</a>
+    </div>
+  </header>
+  <body class="bodyCompras">
+    <h1>VENTAS DE TICKETS</h1>
+    <div class="containerCompras">
+      <div class="boxCompras">
+        <p><b>Estudiante</b><br>Tiene descuento<br>80%<br>*Presentar documentacion</p>
+      </div>
+      <div class="boxCompras">
+        <p><b>Trainee</b><br>Tiene descuento<br>50%<br>*Presentar documentacion</p>
+      </div>
+      <div class="boxCompras">
+        <p><b>Junior</b><br>Tiene descuento<br>15%<br>*Presentar documentacion</p>
+      </div>
+    </div>    
+    <h1>VALOR DEL TICKET $200</h1>
+    <div class="input-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+    </div>
+    <div class="input-group">
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido">
+    </div>
+    <div class="input-group">
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo">
+    </div>
+    <div class="input-group">
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" name="cantidad">
+    </div>
+    <div class="input-group">
+      <label for="categoria">Categoría:</label>
+      <select id="categoria" name="categoria">
+        <option value="Estudiante">Estudiante</option>
+        <option value="Trainee">Trainee</option>
+        <option value="Junior">Junior</option>
+      </select>
+    </div>
+  
+    <div class="total">
+      <label for="total" class="total-label">Total a pagar: $</label>
+      <input type="text" id="total" class="total-input" readonly>
+    </div>
+  
+    <div class="buttonsCompras">
+      <button class="buttonCompras" id="borrar">Borrar</button>
+      <button class="buttonCompras" id="resumen">Resumen</button>
+    </div>  
+    <script src="script.js"></script>
+  </body>
+  </html>
+  
+  <footer>
+    <div class="footer-links">
+      <a href="#">Preguntas frecuentes</a>
+      <a href="#">Contactano</a>
+      <a href="#">Prensa</a>
+      <a href="#">Conferencias</a>
+      <a href="#">Terminos y condiciones</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Estudiantes</a>
+    </div>
+  </footer>
+</body>
+</html>

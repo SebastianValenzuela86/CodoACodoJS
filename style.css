@@ -1,0 +1,365 @@
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 10px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .header-right a:hover {
+    opacity: 0.8;
+  }
+    
+  footer {
+    background-color: #1e2040;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 10px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    opacity: 0.8;
+  }
+
+  .bodyConferencia {
+    background-image: url('fondo01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+  }
+
+  .bodyOrador {
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    background-image: url("ruta_de_la_imagen");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .content {
+    max-width: 50%;
+    text-align: right;
+    margin-right: 05%;
+    color: whitesmoke;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .button-green {
+    background-color: #007f5f;
+    border-color: #007f5f;
+  }
+  
+  .button-green:hover {
+    background-color: #00593c;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .image-container .text {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .image-container .text h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .image-container .text p {
+    font-size: 0.8em;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  @media (min-width: 768px) {
+    .image-container {
+      flex-wrap: nowrap;
+    }
+
+    .image-container .image {
+      flex-basis: 33.33%;
+    }
+  }
+
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #photo {
+    flex: 1;
+    height: 100vh;
+    background-image: url("ruta-de-la-imagen.jpg");
+    background-size: cover;
+  }
+  
+  #text {
+    flex: 1;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  #text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #container {
+      flex-direction: column;
+    }
+    
+    #photo {
+      height: 50vh;
+    }
+  }
+
+  #containerForm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  #title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #subtitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
+  
+  form {
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"], form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  #form2 textarea {
+    height: 200px;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    background-color: #6ac47e;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #57a06b;
+  }
+
+  .bodyCompras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .containerCompras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .boxCompras {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .input-group label {
+    margin-bottom: 5px;
+  }
+
+  .input-group input,
+  .input-group select {
+    width: 200px;
+    padding: 5px;
+  }
+
+  .total {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .total-label {
+    margin-right: 10px;
+  }
+
+  .total-input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid black;
+  }
+
+  .buttonsCompras {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttonCompras {
+    margin: 0 5px;
+    background-color: lightgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: darkgreen;
+  }
+  
